@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <title>Profile page</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+<div class="w-full min-h-screen bg-zinc-700 px-10 py-5 text-white">
+    <h1 class="text-2xl"> Create New Post</h1>
+    <hr class="opacity-10 mt-15">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input class="block w-1/3 px-3 py-2" type="file" name="postimage">
+        <input class="block w-1/3 px-3 py-2 border-2 mt-2 rounded-md text-zinc-800" type="text" placeholder="Title" name="title" >
+        <textarea class="block w-1/3 px3 py-2 h-60 border-2 mt-2 rounded-md text-zinc-800" type="text" placeholder="Description" name="description"></textarea>
+        <input class="block w-1/3 px-3 py-2 border-2 mt-2 bg-red-700 rounded-md" type="submit" value="Create Post">    
+    </form>
+</div>    
+</body>
+</html>
+
+
